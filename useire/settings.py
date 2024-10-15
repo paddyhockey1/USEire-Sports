@@ -103,7 +103,7 @@ AUTHENTICATION_BACKENDS = [
 SITE_ID = 1
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-paddyhockey-useiresport-ooy05a6lhqt.ws-eu116.gitpod.io'
+    'https://8000-paddyhockey-useiresport-0luhaxh10q5.ws-eu116.gitpod.io'
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

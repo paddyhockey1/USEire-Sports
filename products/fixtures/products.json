@@ -1,0 +1,15 @@
+[{
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+        "sku": "nflcar19952024",
+        "name": "",
+        "description": "Bryce Young #9 Carolina Panthers Nike Game NFL Jersey Blue",
+        "price": 109.90,
+        "category": 1,
+        "rating": 4.7,
+        "image_url": "https://www.taass.com/media/image/e0/44/69/image_804894_1.jpg",
+        "image": "media/custom/nfl/panthers-jersey.jpg"
+    }
+}
+]
