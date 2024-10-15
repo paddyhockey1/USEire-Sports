@@ -1,0 +1,50 @@
+[
+    {
+       "pk":1,
+       "model":"products.category",
+       "fields":{
+          "name":"nfl-items",
+          "friendly_name":"NFL Gear"
+       }
+    },
+    {
+       "pk":2,
+       "model":"products.category",
+       "fields":{
+          "name":"nba-items",
+          "friendly_name":"NBA Gear"
+       }
+    },
+    {
+       "pk":3,
+       "model":"products.category",
+       "fields":{
+          "name":"mlb-items",
+          "friendly_name":"MLB Wear"
+       }
+    },
+    {
+       "pk":4,
+       "model":"products.category",
+       "fields":{
+          "name":"nhl-items",
+          "friendly_name":"NHL Gear"
+       }
+    },
+    {
+       "pk":5,
+       "model":"products.category",
+       "fields":{
+          "name":"ncaa-items",
+          "friendly_name":"NCAA Wear"
+       }
+    },
+    {
+       "pk":6,
+       "model":"products.category",
+       "fields":{
+          "name":"mls-items",
+          "friendly_name":"MLS Wear"
+       }
+    }
+ ]
