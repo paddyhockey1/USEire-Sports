@@ -21,13 +21,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-yz@ct$-18z-rrhqh-3u_h*h6w&#dtsi+l$tj5l%095h@a30pk%'
+SECRET_KEY = 'django-insecure-yz@ct€-18z-rrhqh-3u_h*h6w&#dtsi+l€tj5l%095h@a30pk%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-paddyhockey-useiresport-9zc1hpooxyt.ws-eu116.gitpod.io',
+     '8000-paddyhockey-useiresport-0luhaxh10q5.ws-eu116.gitpod.io',
 ]
 
 
