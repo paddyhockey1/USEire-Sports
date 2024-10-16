@@ -1,157 +1,178 @@
 [
-    {
-       "pk":1,
-       "model":"products.category",
-       "fields":{
-          "name":"nfl-items",
-          "friendly_name":"NFL Gear"
-       }
-    },
-
-    {
-      "pk":19,
+   {
+      "pk":1,
       "model":"products.category",
       "fields":{
-         "name":"nfl-items-afc",
-         "friendly_name":"NFL AFC"
+         "name":"nfl-items",
+         "friendly_name":"NFL Gear"
       }
    },
 
    {
-      "pk":20,
-      "model":"products.category",
-      "fields":{
-         "name":"nfl-items-nfc",
-         "friendly_name":"NFL NFC"
-      }
-   },
+     "pk":7,
+     "model":"products.category",
+     "fields":{
+        "name":"nfl-items-afc",
+        "friendly_name":"NFL AFC"
+     }
+  },
 
+  {
+     "pk":8,
+     "model":"products.category",
+     "fields":{
+        "name":"nfl-items-nfc",
+        "friendly_name":"NFL NFC"
+     }
+  },
+
+  {
+     "pk":9,
+     "model":"products.category",
+     "fields":{
+        "name":"nfl-items-vintage",
+        "friendly_name":"NFL Vintage"
+     }
+  },
+
+  {
+     "pk":10,
+     "model":"products.category",
+     "fields":{
+        "name":"nfl-items-sale",
+        "friendly_name":"NFL Sale"
+     }
+  },
    {
-      "pk":21,
+      "pk":2,
       "model":"products.category",
       "fields":{
-         "name":"nfl-items-vintage",
-         "friendly_name":"NFL Vintage"
-      }
-   },
-
-   {
-      "pk":22,
-      "model":"products.category",
-      "fields":{
-         "name":"nfl-items-sale",
-         "friendly_name":"NFL Sale"
-      }
-   },
-    {
-       "pk":2,
-       "model":"products.category",
-       "fields":{
-          "name":"nba-items",
-          "friendly_name":"NBA Gear"
-       }
-    },
-
-    
-   {
-      "pk":15,
-      "model":"products.category",
-      "fields":{
-         "name":"nba-items-east",
-         "friendly_name":"NBA East"
-      }
-   },
-
-   {
-      "pk":16,
-      "model":"products.category",
-      "fields":{
-         "name":"nba-items-west",
-         "friendly_name":"NBA West"
-      }
-   },
-
-   {
-      "pk":17,
-      "model":"products.category",
-      "fields":{
-         "name":"nba-items-vintage",
-         "friendly_name":"NBA-vintage"
-      }
-   },
-
-   {
-      "pk":18,
-      "model":"products.category",
-      "fields":{
-         "name":"nba-items-sale",
-         "friendly_name":"NBA Sale"
-      }
-   },
-
-    {
-       "pk":3,
-       "model":"products.category",
-       "fields":{
-          "name":"mlb-items",
-          "friendly_name":"MLB Gear"
-       }
-    },
-    {
-       "pk":4,
-       "model":"products.category",
-       "fields":{
-          "name":"nhl-items",
-          "friendly_name":"NHL Gear"
-       }
-    },
-    {
-       "pk":5,
-       "model":"products.category",
-       "fields":{
-          "name":"ncaa-items",
-          "friendly_name":"NCAA Gear"
-       }
-    },
-    {
-       "pk":6,
-       "model":"products.category",
-       "fields":{
-          "name":"mls-items",
-          "friendly_name":"MLS Gear"
-       }
-    },
-
-    {
-      "pk":7,
-      "model":"products.category",
-      "fields":{
-         "name":"nhl-items-vintage",
-         "friendly_name":"NHL Vintage"
-      }
-   },
-
-   {
-      "pk":8,
-      "model":"products.category",
-      "fields":{
-         "name":"nhl-items-east",
-         "friendly_name":"NHL East"
-      }
-   },
-
-   {
-      "pk":9,
-      "model":"products.category",
-      "fields":{
-         "name":"nhl-items-west",
-         "friendly_name":"NHL West"
+         "name":"nba-items",
+         "friendly_name":"NBA Gear"
       }
    },
 
    
+  {
+     "pk":11,
+     "model":"products.category",
+     "fields":{
+        "name":"nba-items-east",
+        "friendly_name":"NBA East"
+     }
+  },
+
+  {
+     "pk":12,
+     "model":"products.category",
+     "fields":{
+        "name":"nba-items-west",
+        "friendly_name":"NBA West"
+     }
+  },
+
+  {
+     "pk":13,
+     "model":"products.category",
+     "fields":{
+        "name":"nba-items-vintage",
+        "friendly_name":"NBA-vintage"
+     }
+  },
+
+  {
+     "pk":14,
+     "model":"products.category",
+     "fields":{
+        "name":"nba-items-sale",
+        "friendly_name":"NBA Sale"
+     }
+  },
+
    {
-      "pk":10,
+      "pk":3,
+      "model":"products.category",
+      "fields":{
+         "name":"mlb-items",
+         "friendly_name":"MLB Gear"
+      }
+   },
+
+   {
+     "pk":15,
+     "model":"products.category",
+     "fields":{
+        "name":"mlb-items-al",
+        "friendly_name":"MLB AL"
+     }
+  },
+
+  {
+     "pk":16,
+     "model":"products.category",
+     "fields":{
+        "name":"mlb-items-nl",
+        "friendly_name":"MLB NL"
+     }
+  },
+
+  {
+     "pk":17,
+     "model":"products.category",
+     "fields":{
+        "name":"mlb-items-vintage",
+        "friendly_name":"MLB Vintage"
+     }
+  },
+
+  {
+     "pk":18,
+     "model":"products.category",
+     "fields":{
+        "name":"mlb-items-sale",
+        "friendly_name":"MLB Sale"
+     }
+  },
+
+   {
+      "pk":4,
+      "model":"products.category",
+      "fields":{
+         "name":"nhl-items",
+         "friendly_name":"NHL Gear"
+      }
+   },
+
+
+  {
+     "pk":19,
+     "model":"products.category",
+     "fields":{
+        "name":"nhl-items-east",
+        "friendly_name":"NHL East"
+     }
+  },
+
+  {
+     "pk":20,
+     "model":"products.category",
+     "fields":{
+        "name":"nhl-items-west",
+        "friendly_name":"NHL West"
+     }
+  },
+
+{
+     "pk":21,
+     "model":"products.category",
+     "fields":{
+        "name":"nhl-items-vintage",
+        "friendly_name":"NHL Vintage"
+     }
+  },
+
+   {
+      "pk":22,
       "model":"products.category",
       "fields":{
          "name":"nhl-items-sale",
@@ -160,39 +181,96 @@
    },
 
    {
-      "pk":11,
+      "pk":4,
       "model":"products.category",
       "fields":{
-         "name":"ncaa-items-vintage",
-         "friendly_name":"NCAA-Vintage"
+         "name":"ncaa-items",
+         "friendly_name":"NCAA Gear"
+      }
+   },
+
+
+  {
+     "pk":23,
+     "model":"products.category",
+     "fields":{
+        "name":"ncaa-items-football",
+        "friendly_name":"NCAA Football"
+     }
+  },
+
+  {
+     "pk":24,
+     "model":"products.category",
+     "fields":{
+        "name":"naa-items-basketball",
+        "friendly_name":"NCAA Basketball"
+     }
+  },
+
+{
+     "pk":25,
+     "model":"products.category",
+     "fields":{
+        "name":"ncaa-items-vintage",
+        "friendly_name":"NCAA Vintage"
+     }
+  },
+
+   {
+      "pk":26,
+      "model":"products.category",
+      "fields":{
+         "name":"ncaa-items-sale",
+         "friendly_name":"NCAA Sale"
       }
    },
 
    {
-      "pk":14,
+      "pk":4,
       "model":"products.category",
       "fields":{
-         "name":"ncaa-items-football",
-         "friendly_name":"NCAA Football"
+         "name":"mls-items",
+         "friendly_name":"MLS Gear"
       }
    },
 
-   {
-      "pk":12,
-      "model":"products.category",
-      "fields":{
-         "name":"mls-items-east",
-         "friendly_name":"MLS East"
-      }
-   },
+
+  {
+     "pk":27,
+     "model":"products.category",
+     "fields":{
+        "name":"mls-items-east",
+        "friendly_name":"MLS East"
+     }
+  },
+
+  {
+     "pk":28,
+     "model":"products.category",
+     "fields":{
+        "name":"mls-items-west",
+        "friendly_name":"MLS West"
+     }
+  },
+
+{
+     "pk":29,
+     "model":"products.category",
+     "fields":{
+        "name":"mls-items-vintage",
+        "friendly_name":"MLS Vintage"
+     }
+  },
 
    {
-      "pk":13,
+      "pk":30,
       "model":"products.category",
       "fields":{
-         "name":"mls-items-vintage",
-         "friendly_name":"MLS Vintage"
+         "name":"mls-items-sale",
+         "friendly_name":"MLS Sale"
       }
    }
+]
 
- ]
+  
