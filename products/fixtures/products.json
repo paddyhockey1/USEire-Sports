@@ -3,14 +3,29 @@
        "pk":1,
        "model":"products.product",
        "fields":{
-          "sku":"pp5001340155",
+          "sku":"nhlana19932024",
           "name":"Men's Fanatics Orange Anaheim Ducks Home Breakaway Jersey",
           "description":"This Anaheim Ducks Home Breakaway Jersey is a spirited piece to have for game day. Distinct graphics match those worn by players on the ice, making you feel like a member of your favourite team. The Fanatics fabric technology will keep you comfortable while cheering the Anaheim Ducks to victory.",
           "price":149.00,
           "category":4,
           "rating":4.6,
           "image_url":"https://images.footballfanatics.com/anaheim-ducks/mens-fanatics-orange-anaheim-ducks-home-breakaway-jersey_ss5_p-202213061+pv-1+u-j2meoqkzbuywru20rkyt+v-yi9s1v5yoipmafykw4xm.jpg?_hv=2&w=900",
-          "image":"ducks-home-jersey.jpg"
+          "image":"media/default/ducks-home-jersey.jpg"
        }
-    }
+    },
+
+    {
+        "pk":2,
+        "model":"products.product",
+        "fields":{
+           "sku":"nhlana19932024",
+           "name":"Men's Fanatics Heather Charcoal Anaheim Ducks Primary Logo Fleece Pullover Hoodie",
+           "description":"Your Anaheim Ducks wardrobe will be a whole lot mightier with this Primary Logo Fleece Pullover Hoodie. This Fanatics gear is made of a cotton-polyester blend to keep you feeling your best. The fresh graphics will make this your favorite piece of Ducks' gear.",
+           "price":77.00,
+           "category":4,
+           "rating":4.8,
+           "image_url":"https://images.footballfanatics.com/anaheim-ducks/mens-fanatics-heather-charcoal-anaheim-ducks-primary-logo-fleece-pullover-hoodie_ss5_p-201915598+pv-1+u-0grgi9d6djubuofblrpx+v-zxsajgm3msy6hkohauqy.jpg?_hv=2&w=900",
+           "image":"ducks-charcoal-hoodie.jpg"
+        }
+     }
 ]
