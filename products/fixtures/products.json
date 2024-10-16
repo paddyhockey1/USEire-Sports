@@ -1,0 +1,16 @@
+[
+    {
+       "pk":1,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5001340155",
+          "name":"Men's Fanatics Orange Anaheim Ducks Home Breakaway Jersey",
+          "description":"This Anaheim Ducks Home Breakaway Jersey is a spirited piece to have for game day. Distinct graphics match those worn by players on the ice, making you feel like a member of your favourite team. The Fanatics fabric technology will keep you comfortable while cheering the Anaheim Ducks to victory.",
+          "price":149.00,
+          "category":4,
+          "rating":4.6,
+          "image_url":"https://images.footballfanatics.com/anaheim-ducks/mens-fanatics-orange-anaheim-ducks-home-breakaway-jersey_ss5_p-202213061+pv-1+u-j2meoqkzbuywru20rkyt+v-yi9s1v5yoipmafykw4xm.jpg?_hv=2&w=900",
+          "image":"ducks-home-jersey.jpg"
+       }
+    }
+]
