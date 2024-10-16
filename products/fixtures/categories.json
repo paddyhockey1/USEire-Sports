@@ -203,7 +203,7 @@
      "pk":24,
      "model":"products.category",
      "fields":{
-        "name":"naa-items-basketball",
+        "name":"ncaa-items-basketball",
         "friendly_name":"NCAA Basketball"
      }
   },
