@@ -46,7 +46,7 @@
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">${{ item.product.price }}</p>
+                                        <p class="my-0">€{{ item.product.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
                                         <form class="form update-form" method="POST" action="">
@@ -83,7 +83,7 @@
                                         <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">${{ item.product.price }}</p>
+                                        <p class="my-0">€{{ item.product.price }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
