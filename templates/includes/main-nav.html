@@ -5,7 +5,7 @@
 <a href=""><img class="logo" src="media/custom/ncaa-logo.jpg" alt=""></a>
 <a href=""><img class="logo" src="media/custom/mls-logo.jpg" alt=""></a>
 
-<div class="collapse navbar-collapse" id="main-nav"></div>
+<div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -22,90 +22,104 @@
         <!--NFL Below Here-->
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="nfl-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 NFL
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">AFC</a>
-                <a href="" class="dropdown-item">NFC</a>
-                <a href="" class="dropdown-item">Vintage</a>
-                <a href="" class="dropdown-item">Sale</a>
-                <a href="" class="dropdown-item">All Items</a>
+                <a href="{% url 'products' %}?category=nfl-items" class="dropdown-item">AFC</a>
+                <a href="{% url 'products' %}?category=nfl-items" class="dropdown-item">NFC</a>
+                <a href="{% url 'products' %}?category=nfl-items" class="dropdown-item">Vintage</a>
+                <a href="{% url 'products' %}?category=nfl-items" class="dropdown-item">Sale</a>
+                <a href="{% url 'products' %}?category=nfl-items" class="dropdown-item">All Items</a>
             </div>
         </li>
 
          <!--NBA Below Here-->
 
          <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="nba-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 NBA
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Eastern Conference</a>
-                <a href="" class="dropdown-item">Western Conference</a>
-                <a href="" class="dropdown-item">Vintage</a>
-                <a href="" class="dropdown-item">Sale</a>
-                <a href="" class="dropdown-item">All Items</a>
+                <a href="{% url 'products' %}?category=nba-items" class="dropdown-item">Eastern Conference</a>
+                <a href="{% url 'products' %}?category=nba-items" class="dropdown-item">Western Conference</a>
+                <a href="{% url 'products' %}?category=nba-items" class="dropdown-item">Vintage</a>
+                <a href="{% url 'products' %}?category=nba-items" class="dropdown-item">Sale</a>
+                <a href="{% url 'products' %}?category=nba-items" class="dropdown-item">All Items</a>
             </div>
         </li>
 
           <!--MLB Below Here-->
 
           <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="" id="mlb-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 MLB
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">American League</a>
-                <a href="" class="dropdown-item">National League</a>
-                <a href="" class="dropdown-item">Vintage</a>
-                <a href="" class="dropdown-item">Sale</a>
-                <a href="" class="dropdown-item">All Items</a>
+                <a href="{% url 'products' %}?category=mlb-items" class="dropdown-item">American League</a>
+                <a href="{% url 'products' %}?category=mlb-items" class="dropdown-item">National League</a>
+                <a href="{% url 'products' %}?category=mlb-items" class="dropdown-item">Vintage</a>
+                <a href="{% url 'products' %}?category=mlb-items" class="dropdown-item">Sale</a>
+                <a href="{% url 'products' %}?category=mlb-items" class="dropdown-item">All Items</a>
             </div>
         </li>
 
            <!--NHL Below Here-->
 
            <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="nhl-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 NHL
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Eastern Conference</a>
-                <a href="" class="dropdown-item">Western Conference</a>
-                <a href="" class="dropdown-item">Vintage</a>
-                <a href="" class="dropdown-item">Sale</a>
-                <a href="" class="dropdown-item">All Items</a>
+                <a href="{% url 'products' %}?category=nhl-items-east" class="dropdown-item">Eastern Conference</a>
+                <a href="{% url 'products' %}?category=nhl-items-west" class="dropdown-item">Western Conference</a>
+                <a href="{% url 'products' %}?category=nhl-items-vintage" class="dropdown-item">Vintage</a>
+                <a href="{% url 'products' %}?category=nhl-items-sale" class="dropdown-item">Sale</a>
+                <a href="{% url 'products' %}?category=nhl-items,nhl-items-east,nhl-items-west,nhl-items-vintage,nhl-item-sale" class="dropdown-item">All Items</a>
             </div>
         </li>
 
+    
             <!--NCAA Below Here-->
 
             <li class="nav-item dropdown">
-                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    NFL
+                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="ncaa-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    NCAA
                 </a>
                 <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                    <a href="" class="dropdown-item">Football</a>
-                    <a href="" class="dropdown-item">Basketball</a>
-                    <a href="" class="dropdown-item">Vintage</a>
-                    <a href="" class="dropdown-item">Sale</a>
-                    <a href="" class="dropdown-item">All Items</a>
+                    <a href="{% url 'products' %}?category=ncaa-items" class="dropdown-item">Football</a>
+                    <a href="{% url 'products' %}?category=ncaa-items" class="dropdown-item">Basketball</a>
+                    <a href="{% url 'products' %}?category=ncaa-items" class="dropdown-item">Vintage</a>
+                    <a href="{% url 'products' %}?category=ncaa-items" class="dropdown-item">Sale</a>
+                    <a href="{% url 'products' %}?category=ncaa-items" class="dropdown-item">All Items</a>
                 </div>
             </li>
 
              <!--MLS Below Here-->
 
              <li class="nav-item dropdown">
-                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="mls-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     MLS
                 </a>
                 <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                    <a href="" class="dropdown-item">Eastern Conference</a>
-                    <a href="" class="dropdown-item">Western Conference</a>
-                    <a href="" class="dropdown-item">Vintage</a>
-                    <a href="" class="dropdown-item">Sale</a>
-                    <a href="" class="dropdown-item">All Items</a>
+                    <a href="{% url 'products' %}?category=ncaa-items" class="dropdown-item">Eastern Conference</a>
+                    <a href="{% url 'products' %}?category=ncaa-items" class="dropdown-item">Western Conference</a>
+                    <a href="{% url 'products' %}?category=ncaa-items" class="dropdown-item">Vintage</a>
+                    <a href="{% url 'products' %}?category=ncaa-items" class="dropdown-item">Sale</a>
+                    <a href="{% url 'products' %}?category=ncaa-items" class="dropdown-item">All Items</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+                    <a href="{% url 'products' %}?category=ncaa-items" class="dropdown-item"></a>
+                    <a href="{% url 'products' %}?category=ncaa-items" class="dropdown-item"></a>
+                    <a href="{% url 'products' %}?category=ncaa-items" class="dropdown-item"></a>
+                    <a href="{% url 'products' %}?category=ncaa-items" class="dropdown-item"></a>
+                    <a href="{% url 'products' %}?category=ncaa-items" class="dropdown-item"></a>
                 </div>
             </li>
         

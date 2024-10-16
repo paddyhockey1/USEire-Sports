@@ -30,7 +30,7 @@
      },
 
      {
-        "pk":1,
+        "pk":3,
         "model":"products.product",
         "fields":{
            "sku":"nflcar19952024",

@@ -52,8 +52,36 @@
       "pk":7,
       "model":"products.category",
       "fields":{
-         "name":"non-clothing",
-         "friendly_name":"Other"
+         "name":"nhl-items-vintage",
+         "friendly_name":"NHL Vintage"
+      }
+   },
+
+   {
+      "pk":8,
+      "model":"products.category",
+      "fields":{
+         "name":"nhl-items-east",
+         "friendly_name":"NHL East"
+      }
+   },
+
+   {
+      "pk":9,
+      "model":"products.category",
+      "fields":{
+         "name":"nhl-items-west",
+         "friendly_name":"NHL West"
+      }
+   },
+
+   
+   {
+      "pk":10,
+      "model":"products.category",
+      "fields":{
+         "name":"nhl-items-sale",
+         "friendly_name":"NHL Sale"
       }
    }
  ]
