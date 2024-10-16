@@ -7,6 +7,42 @@
           "friendly_name":"NFL Gear"
        }
     },
+
+    {
+      "pk":19,
+      "model":"products.category",
+      "fields":{
+         "name":"nfl-items-afc",
+         "friendly_name":"NFL AFC"
+      }
+   },
+
+   {
+      "pk":20,
+      "model":"products.category",
+      "fields":{
+         "name":"nfl-items-nfc",
+         "friendly_name":"NFL NFC"
+      }
+   },
+
+   {
+      "pk":21,
+      "model":"products.category",
+      "fields":{
+         "name":"nfl-items-vintage",
+         "friendly_name":"NFL Vintage"
+      }
+   },
+
+   {
+      "pk":22,
+      "model":"products.category",
+      "fields":{
+         "name":"nfl-items-sale",
+         "friendly_name":"NFL Sale"
+      }
+   },
     {
        "pk":2,
        "model":"products.category",
@@ -51,10 +87,8 @@
          "name":"nba-items-sale",
          "friendly_name":"NBA Sale"
       }
-   }
+   },
 
-
-    
     {
        "pk":3,
        "model":"products.category",
