@@ -15,6 +15,7 @@
           "friendly_name":"NBA Gear"
        }
     },
+    
     {
        "pk":3,
        "model":"products.category",
@@ -113,11 +114,47 @@
    },
 
    {
-      "pk":12,
+      "pk":14,
       "model":"products.category",
       "fields":{
          "name":"ncaa-items-football",
          "friendly_name":"NCAA Football"
       }
-   }
+   },
+
+   {
+      "pk":15,
+      "model":"products.category",
+      "fields":{
+         "name":"nba-items-east",
+         "friendly_name":"NBA East"
+      }
+   },
+
+   {
+      "pk":16,
+      "model":"products.category",
+      "fields":{
+         "name":"nba-items-west",
+         "friendly_name":"NBA West"
+      }
+   },
+
+   {
+      "pk":17,
+      "model":"products.category",
+      "fields":{
+         "name":"nba-items-vintage",
+         "friendly_name":"NBA-vintage"
+      }
+   },
+
+   {
+      "pk":18,
+      "model":"products.category",
+      "fields":{
+         "name":"nba-items-sale",
+         "friendly_name":"NBA Sale"
+      }
+   },
  ]
