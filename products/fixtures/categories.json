@@ -20,7 +20,7 @@
        "model":"products.category",
        "fields":{
           "name":"mlb-items",
-          "friendly_name":"MLB Wear"
+          "friendly_name":"MLB Gear"
        }
     },
     {
@@ -36,7 +36,7 @@
        "model":"products.category",
        "fields":{
           "name":"ncaa-items",
-          "friendly_name":"NCAA Wear"
+          "friendly_name":"NCAA Gear"
        }
     },
     {
@@ -44,7 +44,7 @@
        "model":"products.category",
        "fields":{
           "name":"mls-items",
-          "friendly_name":"MLS Wear"
+          "friendly_name":"MLS Gear"
        }
     },
 
@@ -82,6 +82,42 @@
       "fields":{
          "name":"nhl-items-sale",
          "friendly_name":"NHL Sale"
+      }
+   },
+
+   {
+      "pk":11,
+      "model":"products.category",
+      "fields":{
+         "name":"ncaa-items-vintage",
+         "friendly_name":"NCAA-Vintage"
+      }
+   },
+
+   {
+      "pk":12,
+      "model":"products.category",
+      "fields":{
+         "name":"mls-items-east",
+         "friendly_name":"MLS East"
+      }
+   },
+
+   {
+      "pk":13,
+      "model":"products.category",
+      "fields":{
+         "name":"mls-items-vintage",
+         "friendly_name":"MLS Vintage"
+      }
+   },
+
+   {
+      "pk":12,
+      "model":"products.category",
+      "fields":{
+         "name":"ncaa-items-football",
+         "friendly_name":"NCAA Football"
       }
    }
  ]
