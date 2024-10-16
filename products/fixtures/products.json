@@ -10,7 +10,7 @@
           "category":4,
           "rating":4.6,
           "image_url":"https://images.footballfanatics.com/anaheim-ducks/mens-fanatics-orange-anaheim-ducks-home-breakaway-jersey_ss5_p-202213061+pv-1+u-j2meoqkzbuywru20rkyt+v-yi9s1v5yoipmafykw4xm.jpg?_hv=2&w=900",
-          "image":"media/default/ducks-home-jersey.jpg"
+          "image":"DP0113201617034987M.jpg"
        }
     },
 
@@ -26,6 +26,21 @@
            "rating":4.8,
            "image_url":"https://images.footballfanatics.com/anaheim-ducks/mens-fanatics-heather-charcoal-anaheim-ducks-primary-logo-fleece-pullover-hoodie_ss5_p-201915598+pv-1+u-0grgi9d6djubuofblrpx+v-zxsajgm3msy6hkohauqy.jpg?_hv=2&w=900",
            "image":"ducks-charcoal-hoodie.jpg"
+        }
+     },
+
+     {
+        "pk":1,
+        "model":"products.product",
+        "fields":{
+           "sku":"nflcar19952024",
+           "name":"Carolina Panthers Nike Performance Fleece Pullover Hoodie - Mens",
+           "description":"Enjoy watching your team in comfort. Team branded, the hoodie offers a warm and cosy feel, and is perfect for gameday and everyday wear.",
+           "price":83.00,
+           "category":4,
+           "rating":4.8,
+           "image_url":"https://images.footballfanatics.com/carolina-panthers/carolina-panthers-nike-performance-fleece-pullover-hoodie-mens_ss5_p-200934599+pv-1+u-hjd65eubfvp5ibvmyfma+v-vmfuu3dbdlrewu8g2sfz.jpg?_hv=2&w=900",
+           "image":"panthers-hoodie.jpg"
         }
      }
 ]
