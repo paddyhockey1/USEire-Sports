@@ -1,9 +1,9 @@
-<a href=""><img class="logo" src="media/custom/nfl-logo.jpg" alt=""></a>
-<a href=""><img class="logo" src="media/custom/nba-logo.jpg" alt=""></a>
-<a href=""><img class="logo" src="media/custom/mlb-logo.jpg" alt=""></a>
-<a href=""><img class="logo" src="media/custom/nhl-logo.jpg" alt=""></a>
-<a href=""><img class="logo" src="media/custom/ncaa-logo.jpg" alt=""></a>
-<a href=""><img class="logo" src="media/custom/mls-logo.jpg" alt=""></a>
+<a href="{% url 'products' %}?category=nfl-items-afc,nfl-items-nfc,nfl-items-vintage,nfl-items-sale,nfl-items"><img class="logo" src="media/custom/nfl-logo.jpg" alt=""></a>
+<a href="{% url 'products' %}?category=nba-items-east,nba-items-west,nba-items-vinatage,nba-items-sale,nba-items"><img class="logo" src="media/custom/nba-logo.jpg" alt=""></a>
+<a href="{% url 'products' %}?category=mlb-items-al,mlb-items-nl,mlb-items-vintage,mlb-items-sale,mlb-items"><img class="logo" src="media/custom/mlb-logo.jpg" alt=""></a>
+<a href="{% url 'products' %}?category=nhl-items,nhl-items-east,nhl-items-west,nhl-items-vintage,nhl-item-sale"><img class="logo" src="media/custom/nhl-logo.jpg" alt=""></a>
+<a href="{% url 'products' %}?category=ncaa-items,ncaa-items-football,ncaa-items-basketball,ncaa-items-vintage,ncaa-items-sale"><img class="logo" src="media/custom/ncaa-logo.jpg" alt=""></a>
+<a href="{% url 'products' %}?category=mls-items,mls-items-east,mls-items-west,mls-items-vintage,mls-items-sale"><img class="logo" src="media/custom/mls-logo.jpg" alt=""></a>
 
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
@@ -12,10 +12,10 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
