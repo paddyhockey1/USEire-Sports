@@ -181,8 +181,8 @@ a.category-badge > span.badge:hover {
     margin-top: 10px;
 }
 
-.mt-3 {
-    white-space: pre !important;
+.mt-3-description {
+    white-space: pre-wrap !important;
 }
 
 /* -------------------------------- Media Queries */
