@@ -185,6 +185,10 @@ a.category-badge > span.badge:hover {
     white-space: pre-wrap !important;
 }
 
+.mid {
+    height: 500px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -232,3 +236,6 @@ a.category-badge > span.badge:hover {
 }
 
 }
+
+/*--Sale Items on HOme Page Styling Below--*/
+
