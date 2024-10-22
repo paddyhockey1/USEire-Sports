@@ -1,0 +1,6 @@
+Create in useire folder models.py file
+
+
+Favourites/wishlist - Users
+Seller - 
+members -  
