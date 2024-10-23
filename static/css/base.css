@@ -185,26 +185,6 @@ a.category-badge > span.badge:hover {
     white-space: pre-wrap !important;
 }
 
-/*--Custom CSS Below--*/
-.footer {
-    background-color: black;
-    height: 100px;
-    width: 100%;
-    line-height: 100px;
-    position: relative !important;
-    bottom: 0 !important;
-    text-align: center;
-    
-    }
-    
-    .links a {
-    text-align: center;
-    margin: 0 10px;
-    color: white;
-    font-family: arial;
-    text-decoration: none;
-    }
-
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
