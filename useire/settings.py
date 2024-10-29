@@ -31,7 +31,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
      '8000-paddyhockey-useiresport-0luhaxh10q5.ws-eu116.gitpod.io',
-     'useire-sports-ee3eadac878f.herokuapp.com/',
+     'useire-sports-ee3eadac878f.herokuapp.com',
 ]
 
 
