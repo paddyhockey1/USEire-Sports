@@ -27,7 +27,7 @@ SECRET_KEY = 'Pondacenter#_1993'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
      '8000-paddyhockey-useiresport-0luhaxh10q5.ws-eu116.gitpod.io',
@@ -148,6 +148,8 @@ else:
 
 
 
+
+
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
@@ -199,5 +201,13 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'eur'
 STRIPE_PUBLIC_KEY = 'pk_test_51QCGuODyLxdlHT8TwyywDVVBc6qtaFM7k4UNOFcXKxX2QwARnfswIVNOtPe1FQwTMWJcYOaGpyBpKJtUNxP8g3zq00aToXunsW'
 STRIPE_SECRET_KEY = 'sk_test_51QCGuODyLxdlHT8TakKFovAop3V2hL2I7lF7hwTDNh2l7iWRGU7PcOSwcyIEyueZQjQ6d67DaHz4OoSzephyrDYc00mWLZWKBy'
-STRIPE_WH_KEY = ''
+STRIPE_WH_KEY = 'whsec_hOUEAa21ja4NwaNIvyLQ7tv1XEw1E8lR'
 DEFAULT_FROM_EMAIL = 'useiresports@example.com'
+
+# FREE_DELIVERY_THRESHOLD = 50
+# STANDARD_DELIVERY_PERCENTAGE = 10
+# STRIPE_CURRENCY = 'eur'
+# STRIPE_PUBLIC_KEY = ''
+# STRIPE_SECRET_KEY = ''
+# STRIPE_WH_KEY = ''
+# DEFAULT_FROM_EMAIL = 'useiresports@example.com'
