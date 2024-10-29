@@ -136,6 +136,10 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#      'default': dj_database_url.parse('postgres://uj0y2uh5h5j:NUwBKmEzjdGb@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/urban_scuba_skier_712833')
+#  }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
