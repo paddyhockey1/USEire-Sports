@@ -31,7 +31,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
      '8000-paddyhockey-useiresport-0luhaxh10q5.ws-eu116.gitpod.io',
-     'useire-sports-ee3eadac878f.herokuapp.com',
+     '.herokuapp.com',
 ]
 
 
@@ -113,7 +113,7 @@ SITE_ID = 1
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-paddyhockey-useiresport-0luhaxh10q5.ws-eu116.gitpod.io',
-    'https://useire-sports-ee3eadac878f.herokuapp.com/',
+    'https://*.herokuapp.com',
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
