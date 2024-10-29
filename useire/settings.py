@@ -30,8 +30,9 @@ SECRET_KEY = 'Pondacenter#_1993'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-     '8000-paddyhockey-useiresport-0luhaxh10q5.ws-eu116.gitpod.io',
-     '.herokuapp.com',
+    #  '8000-paddyhockey-useiresport-0luhaxh10q5.ws-eu116.gitpod.io',
+    #  '.herokuapp.com',
+    'paddyhockey1-useire-sports.herokuapp.com', '8000-paddyhockey-useiresport-0luhaxh10q5.ws-eu116.gitpod.io',
 ]
 
 
