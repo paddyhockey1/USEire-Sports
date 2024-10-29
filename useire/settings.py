@@ -27,7 +27,7 @@ SECRET_KEY = 'Pondacenter#_1993'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = 'False'
+DEBUG = False
 
 ALLOWED_HOSTS = [
      '8000-paddyhockey-useiresport-0luhaxh10q5.ws-eu116.gitpod.io',
