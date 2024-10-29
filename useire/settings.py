@@ -26,11 +26,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'Pondacenter#_1993'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+
+DEBUG = 'False'
 
 ALLOWED_HOSTS = [
      '8000-paddyhockey-useiresport-0luhaxh10q5.ws-eu116.gitpod.io',
-     'https://useire-sports-ee3eadac878f.herokuapp.com/',
+     'useire-sports-ee3eadac878f.herokuapp.com/',
 ]
 
 
@@ -111,7 +112,8 @@ AUTHENTICATION_BACKENDS = [
 SITE_ID = 1
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-paddyhockey-useiresport-0luhaxh10q5.ws-eu116.gitpod.io'
+    'https://8000-paddyhockey-useiresport-0luhaxh10q5.ws-eu116.gitpod.io',
+    'https://useire-sports-ee3eadac878f.herokuapp.com/',
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
@@ -133,7 +135,7 @@ WSGI_APPLICATION = 'useire.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': dj_database_url.parse(os.environ.get('postgres://uj0y2uh5h5j:NUwBKmEzjdGb@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/urban_scuba_skier_712833'))
     }
 else:
     DATABASES = {
