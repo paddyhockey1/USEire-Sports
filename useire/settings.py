@@ -27,12 +27,15 @@ SECRET_KEY = 'Pondacenter#_1993'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = True
+
+# DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = False
+
 
 ALLOWED_HOSTS = [
-    #  '8000-paddyhockey-useiresport-0luhaxh10q5.ws-eu116.gitpod.io',
-    #  '.herokuapp.com',
-    'paddyhockey1-useire-sports.herokuapp.com', '8000-paddyhockey-useiresport-0luhaxh10q5.ws-eu116.gitpod.io',
+     '8000-paddyhockey-useiresport-0luhaxh10q5.ws-eu116.gitpod.io',
+     'https://useire-sports-b029765775db.herokuapp.com',
+    
 ]
 
 
@@ -114,7 +117,7 @@ SITE_ID = 1
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-paddyhockey-useiresport-0luhaxh10q5.ws-eu116.gitpod.io',
-    'https://*.herokuapp.com',
+    'https://useire-sports-b029765775db.herokuapp.com/',
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
