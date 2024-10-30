@@ -23,12 +23,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'Pondacenter#_1993'
+# SECRET_KEY = 'Pondacenter#_1993'
+
+SECERET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-DEBUG = True
+# DEBUG = False
+
+DEBUG = 'DEVELOPMENT' in os.environ
 
 
 ALLOWED_HOSTS = [
@@ -57,6 +61,7 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'crispy_forms',
+    'storages',
 ]
 
 MIDDLEWARE = (
@@ -193,9 +198,28 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+if 'USE_AWS' in os.environ:
+    # Bucket Config
+    AWS_STORAGE_BUCKET_NAME = 'ckz8780-boutique-ado'
+    AWS_S3_REGION_NAME = 'us-east-1'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+    
 
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -203,20 +227,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Stripe
-# FREE_DELIVERY_THRESHOLD = 50
-# STANDARD_DELIVERY_PERCENTAGE = 10
-# STRIPE_CURRENCY = 'eur'
-# STRIPE_PUBLIC_KEY = 'pk_test_51QCGuODyLxdlHT8TwyywDVVBc6qtaFM7k4UNOFcXKxX2QwARnfswIVNOtPe1FQwTMWJcYOaGpyBpKJtUNxP8g3zq00aToXunsW'
-# STRIPE_SECRET_KEY = 'sk_test_51QCGuODyLxdlHT8TakKFovAop3V2hL2I7lF7hwTDNh2l7iWRGU7PcOSwcyIEyueZQjQ6d67DaHz4OoSzephyrDYc00mWLZWKBy'
-# STRIPE_WH_KEY = 'whsec_hOUEAa21ja4NwaNIvyLQ7tv1XEw1E8lR'
-# DEFAULT_FROM_EMAIL = 'useiresports@example.com'
-
-# os.environ['SECRET_KEY'] = 'Pondacenter#_1993'
-# os.environ['DATABASE_URL'] = 'postgres://uj0y2uh5h5j:NUwBKmEzjdGb@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/urban_scuba_skier_712833'
-# os.environ['STRIPE_PUBLIC_KEY'] = 'pk_test_51QCGuODyLxdlHT8TwyywDVVBc6qtaFM7k4UNOFcXKxX2QwARnfswIVNOtPe1FQwTMWJcYOaGpyBpKJtUNxP8g3zq00aToXunsW'
-# os.environ['STRIPE_SECRET_KEY'] = 'sk_test_51QCGuODyLxdlHT8TakKFovAop3V2hL2I7lF7hwTDNh2l7iWRGU7PcOSwcyIEyueZQjQ6d67DaHz4OoSzephyrDYc00mWLZWKBy'
-# os.environ['STRIPE_WH_KEY'] = 'whsec_hOUEAa21ja4NwaNIvyLQ7tv1XEw1E8lR'
-
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'eur'
