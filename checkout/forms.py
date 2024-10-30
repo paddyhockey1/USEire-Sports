@@ -16,18 +16,19 @@ class OrderForm(forms.ModelForm):
         labels and set autofocus on first field
         """
         super().__init__(*args, **kwargs)
-        # placeholders = {
-        #     'full_name': 'Full Name',
-        #     'email': 'Email Address',
-        #     'phone_number': 'Phone Number',
+        placeholders = {
+            'full_name': 'Full Name',
+            'email': 'Email Address',
+            'phone_number': 'Phone Number',
 
-        #     'postcode': 'Postal Code',
-        #     'town_or_city': 'Town or City',
-        #     'street_address1': 'Street Address 1',
-        #     'street_address2': 'Street Address 2',
-        #     'street_address3': 'Street Address 3',
-        #     'county': 'County',
-        # }
+            'postcode': 'Postal Code',
+            'town_or_city': 'Town or City',
+            'street_address1': 'Street Address 1',
+            'street_address2': 'Street Address 2',
+            'street_address3': 'Street Address 3',
+            'county': 'County',
+        }
+    
 
         self.fields['full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
