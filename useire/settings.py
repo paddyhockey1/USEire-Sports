@@ -29,7 +29,7 @@ SECRET_KEY = 'Pondacenter#_1993'
 
 
 # DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = False
+DEBUG = True
 
 
 ALLOWED_HOSTS = [
