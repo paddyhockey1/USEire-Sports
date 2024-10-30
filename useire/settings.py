@@ -28,13 +28,12 @@ SECRET_KEY = 'Pondacenter#_1993'
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-# DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = True
 
 
 ALLOWED_HOSTS = [
      '8000-paddyhockey-useiresport-0luhaxh10q5.ws-eu116.gitpod.io',
-     'https://useire-sports-b029765775db.herokuapp.com',
+     '.herokuapp.com',
     
 ]
 
@@ -139,7 +138,7 @@ WSGI_APPLICATION = 'useire.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('postgres://uj0y2uh5h5j:NUwBKmEzjdGb@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/urban_scuba_skier_712833'))
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
@@ -204,18 +203,24 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Stripe
-FREE_DELIVERY_THRESHOLD = 50
-STANDARD_DELIVERY_PERCENTAGE = 10
-STRIPE_CURRENCY = 'eur'
-STRIPE_PUBLIC_KEY = 'pk_test_51QCGuODyLxdlHT8TwyywDVVBc6qtaFM7k4UNOFcXKxX2QwARnfswIVNOtPe1FQwTMWJcYOaGpyBpKJtUNxP8g3zq00aToXunsW'
-STRIPE_SECRET_KEY = 'sk_test_51QCGuODyLxdlHT8TakKFovAop3V2hL2I7lF7hwTDNh2l7iWRGU7PcOSwcyIEyueZQjQ6d67DaHz4OoSzephyrDYc00mWLZWKBy'
-STRIPE_WH_KEY = 'whsec_hOUEAa21ja4NwaNIvyLQ7tv1XEw1E8lR'
-DEFAULT_FROM_EMAIL = 'useiresports@example.com'
-
 # FREE_DELIVERY_THRESHOLD = 50
 # STANDARD_DELIVERY_PERCENTAGE = 10
 # STRIPE_CURRENCY = 'eur'
-# STRIPE_PUBLIC_KEY = ''
-# STRIPE_SECRET_KEY = ''
-# STRIPE_WH_KEY = ''
+# STRIPE_PUBLIC_KEY = 'pk_test_51QCGuODyLxdlHT8TwyywDVVBc6qtaFM7k4UNOFcXKxX2QwARnfswIVNOtPe1FQwTMWJcYOaGpyBpKJtUNxP8g3zq00aToXunsW'
+# STRIPE_SECRET_KEY = 'sk_test_51QCGuODyLxdlHT8TakKFovAop3V2hL2I7lF7hwTDNh2l7iWRGU7PcOSwcyIEyueZQjQ6d67DaHz4OoSzephyrDYc00mWLZWKBy'
+# STRIPE_WH_KEY = 'whsec_hOUEAa21ja4NwaNIvyLQ7tv1XEw1E8lR'
 # DEFAULT_FROM_EMAIL = 'useiresports@example.com'
+
+# os.environ['SECRET_KEY'] = 'Pondacenter#_1993'
+# os.environ['DATABASE_URL'] = 'postgres://uj0y2uh5h5j:NUwBKmEzjdGb@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/urban_scuba_skier_712833'
+# os.environ['STRIPE_PUBLIC_KEY'] = 'pk_test_51QCGuODyLxdlHT8TwyywDVVBc6qtaFM7k4UNOFcXKxX2QwARnfswIVNOtPe1FQwTMWJcYOaGpyBpKJtUNxP8g3zq00aToXunsW'
+# os.environ['STRIPE_SECRET_KEY'] = 'sk_test_51QCGuODyLxdlHT8TakKFovAop3V2hL2I7lF7hwTDNh2l7iWRGU7PcOSwcyIEyueZQjQ6d67DaHz4OoSzephyrDYc00mWLZWKBy'
+# os.environ['STRIPE_WH_KEY'] = 'whsec_hOUEAa21ja4NwaNIvyLQ7tv1XEw1E8lR'
+
+FREE_DELIVERY_THRESHOLD = 50
+STANDARD_DELIVERY_PERCENTAGE = 10
+STRIPE_CURRENCY = 'eur'
+STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY', ' ')
+STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', ' ')
+STRIPE_WH_KEY = os.environ.get('STRIPE_WH_KEY', ' ')
+DEFAULT_FROM_EMAIL = 'useiresports@example.com'
