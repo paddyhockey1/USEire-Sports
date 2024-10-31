@@ -189,51 +189,53 @@ input[name='q']::placeholder {
     white-space: pre-wrap !important;
 }
 
-/*--Custom CSS Below--*/
-.footer {
-    background-color: black;
-    height: 100px;
-    width: 100%;
-    line-height: 100px;
-    position: relative !important;
-    bottom: 0 !important;
-    text-align: center;
-    
-    }
-    
-    .links a {
-    text-align: center;
-    margin: 0 10px;
-    color: white;
-    font-family: arial;
-    text-decoration: none;
-    }
-
     /*--Custom Footer Below--*/
-    .footer {
-        background-color: black;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        height: 75px;
-        margin-top: 20px;
-    }
-    
-    .links {
-        line-height: 50PX;
-        margin: 0 25%;
-    }
 
-    .link {
-        margin: 0 10px;
-        color: white;
-        text-decoration: none;
-        font-family: arial;
-    }
-    
-    .link:hover {
-        color: blue;
-    }
+    .footer {
+		background-color: black;
+		width: 100%;
+		display: block;
+		margin: auto auto 0 auto;
+		text-align: center;
+		bottom: 0px;
+		margin: 0;
+		padding: 0;
+	}
+
+
+	#foot {
+		color: white;
+		text-align: center;
+	}
+
+	.fa {
+
+		height: 30px;
+		width: 30px;
+		text-align: center;
+		margin: auto;
+		text-decoration: none;
+	}
+
+	.fa-instagram {
+		color: white
+	}
+
+	.fa-facebook {
+		color: white
+	}
+
+	.fa-twitter {
+		color: white
+	}
+
+	.fa-youtube {
+		color: white;
+	}
+
+	#index-h5 {
+		color: white;
+	}
 
 
 /* -------------------------------- Media Queries */
