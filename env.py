@@ -1,5 +1,0 @@
-os.environ['SECRET_KEY'] = 'Pondacenter#_1993'
-os.environ['DATABASE_URL'] = 'postgres://uj0y2uh5h5j:NUwBKmEzjdGb@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/urban_scuba_skier_712833'
-os.environ['STRIPE_PUBLIC_KEY'] = 'pk_test_51QCGuODyLxdlHT8TwyywDVVBc6qtaFM7k4UNOFcXKxX2QwARnfswIVNOtPe1FQwTMWJcYOaGpyBpKJtUNxP8g3zq00aToXunsW'
-os.environ['STRIPE_SECRET_KEY'] = 'sk_test_51QCGuODyLxdlHT8TakKFovAop3V2hL2I7lF7hwTDNh2l7iWRGU7PcOSwcyIEyueZQjQ6d67DaHz4OoSzephyrDYc00mWLZWKBy'
-os.environ['STRIPE_WH_KEY'] = 'whsec_hOUEAa21ja4NwaNIvyLQ7tv1XEw1E8lR'
