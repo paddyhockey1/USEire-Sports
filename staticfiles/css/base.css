@@ -117,7 +117,7 @@ input[name='q']::placeholder {
 }
 
 .custom-toast {
-    overflow: scroll;
+    overflow: visible;
 }
 
 .toast-capper {
