@@ -358,6 +358,13 @@ input[name='q']::placeholder {
         padding-top: 116px;
     }
 
+    .message-container {
+        position: fixed;
+        top: 72px;
+        right: 15px;
+        z-index: 99999999999;
+        width: 50%;
+    }
     body {
         height: calc(100vh - 116px);
     }
